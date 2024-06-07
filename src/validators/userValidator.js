@@ -1,0 +1,32 @@
+const Joi = require("joi");
+const { BAD_REQUEST } = require("http-status-codes");
+
+const editUser = (req, res, next) => {
+  const payload = {
+    username: req.body.username,
+    password: req.body.password,
+    email: req.body.email,
+    firstName: req.body.firstName,
+    lastName: req.body.lastName,
+  };
+
+  const validation = Joi.object({
+    username: Joi.string().trim().required(),
+    password: Joi.string().trim().required(),
+    email: Joi.string().trim().required(),
+    firstName: Joi.string().trim().required(),
+    lastName: Joi.string().trim().required(),
+  });
+
+  const { error } = validation.validate(payload);
+
+  if (error) {
+    return res.status(BAD_REQUEST).json({
+      message: error.message,
+    });
+  }
+
+  next();
+};
+
+module.exports = { editUser };
