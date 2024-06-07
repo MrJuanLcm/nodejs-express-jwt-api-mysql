@@ -1,4 +1,4 @@
-# API de autenticación con JSON Web Token (JWT), usando Node.js, Express
+# API de autenticación con JSON Web Token (JWT) usando Node.js y Express.
 
 [![Node](https://img.shields.io/badge/Node-v18.14.0-green?style=for-the-badge&logo=node.js&logoColor=white&labelColor=101010)](https://nodejs.org) [![Express](https://img.shields.io/badge/Express-1.20-green?style=for-the-badge&logo=express&logoColor=white&labelColor=101010)](https://expressjs.com) ![jsonwebtoken](https://img.shields.io/badge/jsonwebtoken-^9.0.2-blue?style=for-the-badge&logo=jsonwebtoken&logoColor=white&labelColor=101010) ![joi](https://img.shields.io/badge/joi-^17.13.1-blue?style=for-the-badge&logo=joi&logoColor=white&labelColor=101010) ![mysql2](https://img.shields.io/badge/mysql2-^3.10.0-blue?style=for-the-badge&logo=mysql2&logoColor=white&labelColor=101010)
 
